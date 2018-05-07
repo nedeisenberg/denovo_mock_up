@@ -1,6 +1,40 @@
 <head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="main.js"></script>
 </head>
 
 <body>
-  <img height=64 id="cursor" src="assets/logo.png">
-</body>
+  <video playsinline autoplay muted id="bgvid">
+    <source src="polina.webm" type="video/webm">
+    <source src="assets/demo_v1.mp4" type="video/mp4">
+</video>
+
+  <div id="cursor_div">
+    <input type="image" height=30 onclick="pop_show()" id="cursor" src="assets/logo.png">
+  </div>
+  <div id="popup_div" class="popup">
+    <div style="left:10px; width:100px;height:300px;display:inline-block;float:left;">
+      <div class="icons">
+        <img width=460px style="left:20px;" src="assets/slider.png">
+    <!--    <p>
+          <img class="icon" id="icon_af" src="assets/icons/animal-free.png">
+        </p>
+        <p>
+          <img class="icon" id="icon_bd" src="assets/icons/biodegradable.png">
+        </p>
+        <p>
+          <img class="icon" id="icon_ev" src="assets/icons/environment.png">
+        </p>
+        <p>
+          <img class="icon" id="icon_hz" src="assets/icons/hazardous.png">
+        </p>
+      </div>
+      <div style="width:200px;display:inline-block;float:left;overflow:hidden;">
+        <p>
+          <img class="icon" id="meter_af" src="assets/icons/animal-free.png">
+        </p>
+      -->
+      </div>
+    </div>
+  </div>
+  </body>

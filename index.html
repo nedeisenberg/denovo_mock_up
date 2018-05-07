@@ -1,15 +1,18 @@
 <head>
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="main.js"></script>
+  <script type='text/javascript' src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
 </head>
 
 <body>
+
+
   <video playsinline autoplay muted id="bgvid">
     <source src="polina.webm" type="video/webm">
-    <source src="assets/demo_v1.mp4" type="video/mp4">
+    <source src="assets/Demo_Ned.mp4" type="video/mp4">
 </video>
 
-  <div id="cursor_div">
+  <div id="cursor_div" style="position:absolute;left:600px;top:160px;visibility:hidden;">
     <input type="image" height=30 onclick="pop_show()" id="cursor" src="assets/logo.png">
   </div>
   <div id="popup_div" class="popup">
@@ -37,4 +40,5 @@
       </div>
     </div>
   </div>
+  <input type="image" onclick="cursor_show()" style="position:absolute;left:1800;" src="assets/logo.png">
   </body>
